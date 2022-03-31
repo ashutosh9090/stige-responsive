@@ -1,0 +1,43 @@
+.photo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.pic1 {
+  width: 600px;
+  height: 400px;
+}
+
+.pic {
+  width: 600px;
+  height: 400px;
+}
+
+@media (max-width: 700px) {
+  .photo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .photo img {
+    width: 400px;
+    height: 500px;
+    object-fit: scale-down;
+  }
+}
+
+@media (max-width: 400px) {
+  .photo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .photo img {
+    width: 350px;
+    height: 500px;
+    object-fit: scale-down;
+  }
+}
